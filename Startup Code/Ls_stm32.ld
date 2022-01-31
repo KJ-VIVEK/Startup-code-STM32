@@ -3,7 +3,7 @@
 * @author    K J Vivek
 * @brief     Set heap size, stack size and stack location according
              to application requirements.
-* @reference 
+* @reference https://youtu.be/qWqlkCLmZoE
 **************************************************************/
 
 /*Entry Point*/
@@ -12,7 +12,10 @@ ENTRY(Reset_Handler)
 /*Address of User stack */
 _Stack_Start =ORIGIN(SRAM) + LENGTH(SRAM);
 
-/*Memory Definition*/
+/**********************************************************************************************
+Memory Definition
+Memory alisaing is done, that is the reason why code executes from 0x0800_0000 and not 0x0000_0000
+**********************************************************************************************/
 MEMORY
 {
   FLASH(rx):ORIGIN =0x08000000,LENGTH =1024K
