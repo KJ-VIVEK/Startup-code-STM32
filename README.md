@@ -36,24 +36,21 @@ C-program(main.c) -> pre-processor(main.i) -> compiler -> Assembly_code(main.s) 
     *C-startup code, transfers .data section from ROM to RAM.
 
 3. Linker file:
-    a. Contains different parts, which allow compiler to understand what code, where to put during execution
-    b. Linker and Locator, together assign unique absolute address to different sections of output file by  
-       referring to address information mentioned in linker script
-    c. It contains code and data memory address and size info
-    d. Has its own format
-    e. It is applied during linking phase
+    a> Contains different parts, which allow compiler to understand what code, where to put during execution
+    b> Linker and Locator, together assign unique absolute address to different sections of output file by referring to address information mentioned in linker script
+    c> It contains code and data memory address and size info
+    d> Has its own format
+    e> It is applied during linking phase
 
 4. Locator is used to merge different sections and assign address.
 
 5. Reset handler:
-
     a> Processor starts at pre-defind address, lets say 0x0000_0000.
     b> Processor fetches value in 0x0000_0000 to SP.
     c> Processor reads next addr after 0x0000_0000 and starts executing first instr.
     d> Here, we initialise, like, clock configuration, stack space, before calling main configuration.
 
 6. To run the code using cmd in W11:
-
   1. Have Make installed. Run Makefile in cmd
   2. Install openOCD which allows debugging and programming of MCU
   3. The following cmd were used to flash code using openOCD:  
