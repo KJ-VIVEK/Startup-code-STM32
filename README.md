@@ -10,38 +10,16 @@ THEORY:
 C-program(main.c) -> pre-processor(main.i) -> compiler -> Assembly_code(main.s) -> Assembler -> Object_code(main.o) -> Linker -> Executable(main.exe)
 
 2. Different sections of object file:
+    - .data: contains initialised data
+    - .rodata: contains read-only data
+    - .text: contains instruction code
+    - .bss: contains uninitialised data
+    - user-defined: user can put his sections
+    - special sections: added by compiler
+    - vector table: contains the reset value of SP amd exception handlers, in order.
 
- ______FLASH________ 
-|___________________| : unused memory 
-|______edata________| : unused memory
-|______sdata________| : .data 
-|___________________| : .rodata               
-|___________________| : .text copied from flash      
-|___________________| : vector table=0x08000000
-
-****************************************************************
-
- _______SRAM________
-|                   | : Stack
- ---_Stack_Start----
-|                   | : unused SRAM
- -------------------
-|                   | : heap
- ------_ebss--------
-|                   | : .bss : copied from flash
- ------_sbss--------
-|___________________| : .data=0x20000000 : copied from flash
-
-    a> .data: contains initialised data
-    b> .rodata: contains read-only data
-    c> .text: contains instruction code
-    d> .bss: contains uninitialised data
-    e> user-defined: user can put his sections
-    f> special sections: added by compiler
-    g> vector table: contains the reset value of SP amd exception handlers, in order.
-
-    *.data is copied into SRAM
-    *C-startup code, transfers .data section from ROM to RAM.
+    - *.data is copied into SRAM
+    - *C-startup code, transfers .data section from ROM to RAM.
 
 3. Linker file:
     - Contains different parts, which allow compiler to understand what code, where to put during execution
