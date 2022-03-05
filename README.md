@@ -12,16 +12,11 @@ C-program(main.c) -> pre-processor(main.i) -> compiler -> Assembly_code(main.s) 
 2. Different sections of object file:
 
  ______FLASH________ 
-|                   | : unused memory 
- ------------------- 
-|                   | : unused memory
- ------_edata------- 
-|                   | : .data 
- ------_sdata------- 
-|                   | : .rodata 
- -------------------               
-|                   | : .text copied from flash      
- -------------------
+|___________________| : unused memory 
+|______edata________| : unused memory
+|______sdata________| : .data 
+|___________________| : .rodata               
+|___________________| : .text copied from flash      
 |___________________| : vector table=0x08000000
 
 ****************************************************************
