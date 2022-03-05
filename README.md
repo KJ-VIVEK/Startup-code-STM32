@@ -11,18 +11,31 @@ C-program(main.c) -> pre-processor(main.i) -> compiler -> Assembly_code(main.s) 
 
 2. Different sections of object file:
 
- ______FLASH________                                          _______SRAM________
-|                   | : unused memory                        |                   | : Stack
- -------------------                                          ---_Stack_Start----
-|                   | : unused memory                        |                   | : unused SRAM
- ------_edata-------                                          -------------------
-|                   | : .data                                |                   | : heap
- ------_sdata-------                                          ------_ebss--------
-|                   | : .rodata                              |                   | : .bss : copied from flash
- -------------------                                          ------_sbss--------
-|                   | : .text                                |___________________| : .data=0x20000000 : copied from flash      
+ ______FLASH________ 
+|                   | : unused memory 
+ ------------------- 
+|                   | : unused memory
+ ------_edata------- 
+|                   | : .data 
+ ------_sdata------- 
+|                   | : .rodata 
+ -------------------               
+|                   | : .text copied from flash      
  -------------------
 |___________________| : vector table=0x08000000
+
+****************************************************************
+
+ _______SRAM________
+|                   | : Stack
+ ---_Stack_Start----
+|                   | : unused SRAM
+ -------------------
+|                   | : heap
+ ------_ebss--------
+|                   | : .bss : copied from flash
+ ------_sbss--------
+|___________________| : .data=0x20000000 : copied from flash
 
     a> .data: contains initialised data
     b> .rodata: contains read-only data
