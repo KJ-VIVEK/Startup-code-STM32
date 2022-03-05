@@ -6,7 +6,7 @@
                 - Set the initial PC == Reset_Handler,
                 - Set the vector table entries with the exceptions ISR address
                 - Branches to main in the C library (which eventually calls main()).
-* @reference 
+* @reference https://youtu.be/qWqlkCLmZoE
 **************************************************************/
 #include<stdint.h>
 
