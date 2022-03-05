@@ -37,12 +37,12 @@ C-program(main.c) -> pre-processor(main.i) -> compiler -> Assembly_code(main.s) 
 
 3. Linker file:
 
-    a> .Contains different parts, which allow compiler to understand what code, where to put during execution
-    b> .Linker and Locator, together assign unique absolute address to different sections of output file by  
+    a. Contains different parts, which allow compiler to understand what code, where to put during execution
+    b. Linker and Locator, together assign unique absolute address to different sections of output file by  
        referring to address information mentioned in linker script
-    c> .It contains code and data memory address and size info
-    d> .Has its own format
-    e> .It is applied during linking phase
+    c. It contains code and data memory address and size info
+    d. Has its own format
+    e. It is applied during linking phase
 
 4. Locator is used to merge different sections and assign address.
 
