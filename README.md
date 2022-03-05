@@ -51,11 +51,11 @@ C-program(main.c) -> pre-processor(main.i) -> compiler -> Assembly_code(main.s) 
     d> Here, we initialise, like, clock configuration, stack space, before calling main configuration.
 
 6. To run the code using cmd in W11:
-  1. Have Make installed. Run Makefile in cmd
-  2. Install openOCD which allows debugging and programming of MCU
-  3. The following cmd were used to flash code using openOCD:  
-      a. arm-none-eabi-gdb.exe      
-      b. target remote localhost:3333      
-      c. monitor reset init      
-      d. monitor flash write_image erase final.elf      
-      e. monitor reset
+  a. Have Make installed. Run Makefile in cmd
+  b. Install openOCD which allows debugging and programming of MCU
+  c. The following cmd were used to flash code using openOCD:  
+      i. arm-none-eabi-gdb.exe      
+      ii. target remote localhost:3333      
+      iii. monitor reset init      
+      iv. monitor flash write_image erase final.elf      
+      v. monitor reset
