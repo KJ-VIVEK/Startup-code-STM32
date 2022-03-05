@@ -45,10 +45,10 @@ C-program(main.c) -> pre-processor(main.i) -> compiler -> Assembly_code(main.s) 
 4. Locator is used to merge different sections and assign address.
 
 5. Reset handler:
-    a> Processor starts at pre-defind address, lets say 0x0000_0000.
-    b> Processor fetches value in 0x0000_0000 to SP.
-    c> Processor reads next addr after 0x0000_0000 and starts executing first instr.
-    d> Here, we initialise, like, clock configuration, stack space, before calling main configuration.
+    - Processor starts at pre-defind address, lets say 0x0000_0000.
+    - Processor fetches value in 0x0000_0000 to SP.
+    - Processor reads next addr after 0x0000_0000 and starts executing first instr.
+    - Here, we initialise, like, clock configuration, stack space, before calling main configuration.
 
 6. To run the code using cmd in W11:
   a. Have Make installed. Run Makefile in cmd
