@@ -36,11 +36,11 @@ C-program(main.c) -> pre-processor(main.i) -> compiler -> Assembly_code(main.s) 
     *C-startup code, transfers .data section from ROM to RAM.
 
 3. Linker file:
-    a> Contains different parts, which allow compiler to understand what code, where to put during execution
-    b> Linker and Locator, together assign unique absolute address to different sections of output file by referring to address information mentioned in linker script
-    c> It contains code and data memory address and size info
-    d> Has its own format
-    e> It is applied during linking phase
+    - Contains different parts, which allow compiler to understand what code, where to put during execution
+    - Linker and Locator, together assign unique absolute address to different sections of output file by referring to address information mentioned in linker script
+    - It contains code and data memory address and size info
+    - Has its own format
+    - It is applied during linking phase
 
 4. Locator is used to merge different sections and assign address.
 
@@ -51,11 +51,11 @@ C-program(main.c) -> pre-processor(main.i) -> compiler -> Assembly_code(main.s) 
     - Here, we initialise, like, clock configuration, stack space, before calling main configuration.
 
 6. To run the code using cmd in W11:
-  a. Have Make installed. Run Makefile in cmd
-  b. Install openOCD which allows debugging and programming of MCU
-  c. The following cmd were used to flash code using openOCD:  
-      i. arm-none-eabi-gdb.exe      
-      ii. target remote localhost:3333      
-      iii. monitor reset init      
-      iv. monitor flash write_image erase final.elf      
-      v. monitor reset
+    - Have Make installed. Run Makefile in cmd
+    - Install openOCD which allows debugging and programming of MCU
+    - The following cmd were used to flash code using openOCD:  
+        i. arm-none-eabi-gdb.exe      
+        ii. target remote localhost:3333      
+        iii. monitor reset init      
+        iv. monitor flash write_image erase final.elf      
+        v. monitor reset
