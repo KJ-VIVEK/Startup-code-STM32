@@ -1,5 +1,6 @@
 # Startup-code-STM32
 Startup code for STM32 Disc MCU, written using inline ASM and C.
+
 Reference: https://youtu.be/qWqlkCLmZoE
 
 OBJECTIVE: To understand how startup code and linker file work together to memory map code at respective places i,e., in FLASH and SRAM.
