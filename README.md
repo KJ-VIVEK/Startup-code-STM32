@@ -36,7 +36,6 @@ C-program(main.c) -> pre-processor(main.i) -> compiler -> Assembly_code(main.s) 
     *C-startup code, transfers .data section from ROM to RAM.
 
 3. Linker file:
-
     a. Contains different parts, which allow compiler to understand what code, where to put during execution
     b. Linker and Locator, together assign unique absolute address to different sections of output file by  
        referring to address information mentioned in linker script
