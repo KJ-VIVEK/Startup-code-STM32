@@ -19,8 +19,8 @@ C-program(main.c) -> pre-processor(main.i) -> compiler -> Assembly_code(main.s) 
     - special sections: added by compiler
     - vector table: contains the reset value of SP amd exception handlers, in order.
 
-    - *.data is copied into SRAM
-    - *C-startup code, transfers .data section from ROM to RAM.
+   *.data is copied into SRAM
+   **C-startup code, transfers .data section from ROM to RAM.
 
 3. Linker file:
     - Contains different parts, which allow compiler to understand what code, where to put during execution
