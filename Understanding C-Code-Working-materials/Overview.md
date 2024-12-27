@@ -23,7 +23,7 @@ Language used to understand is “C”. Cuz, it is the closest to hardware and I
 
 # Road-map
 **“Code” is a set of instructions given to a computer to get defined output while “Code Structure” is set of rules you need follow while writing instructions so it runs as you expect it to.**  
-<img src="../_resources/Lets%20Understand%20C-Code%281%29.png" alt="Lets Understand C-Code(1).png" width="1113" height="458">
+<img src="../_resources/Lets%20Understand%20C-Code.png" alt="Lets Understand C-Code.png" width="1113" height="458">
 
 # Topics
 1.  Overview

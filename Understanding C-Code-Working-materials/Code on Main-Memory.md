@@ -9,7 +9,7 @@ altitude: 0.0000
 
 # Working of Code on Main-Memory
 
-<img src="../_resources/MM-1.png" alt="MM-1.png" width="1318" height="639" class="jop-noMdConv"> 
+<img src="../_resources/MM-1.png" alt="MM-1.png" width="1318" height="639" class="jop-noMdConv">
 <img src="../_resources/MM-2.png" alt="MM-2.png" width="1318" height="639" class="jop-noMdConv">
 <img src="../_resources/MM-3.png" alt="MM-3.png" width="1338" height="639" class="jop-noMdConv">
 <img src="../_resources/MM-4.png" alt="MM-4.png" width="1318" height="639" class="jop-noMdConv">

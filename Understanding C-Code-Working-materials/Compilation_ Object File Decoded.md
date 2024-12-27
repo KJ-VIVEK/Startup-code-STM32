@@ -9,7 +9,10 @@ altitude: 0.0000
 
 # Compilation: Object File Decoded
 
-<img src="../_resources/Decode-1.png" alt="Decode-1.png" width="1318" height="639" class="jop-noMdConv"> <img src="../_resources/Decode-2.png" alt="Decode-2.png" width="1318" height="639" class="jop-noMdConv"><img src="../_resources/Decode-3.png" alt="Decode-3.png" width="1318" height="639" class="jop-noMdConv"><img src="../_resources/Decode-4.png" alt="Decode-4.png" width="1318" height="639" class="jop-noMdConv">
+<img src="../_resources/Decode-1.png" alt="Decode-1.png" width="1318" height="639" class="jop-noMdConv">
+<img src="../_resources/Decode-2.png" alt="Decode-2.png" width="1318" height="639" class="jop-noMdConv">
+<img src="../_resources/Decode-3.png" alt="Decode-3.png" width="1318" height="639" class="jop-noMdConv">
+<img src="../_resources/Decode-4.png" alt="Decode-4.png" width="1318" height="639" class="jop-noMdConv">
 
 1.  “.bss” doesn’t consume space in flash, but “.data” does.
 2.  “.bss” section size is recorded and is allocated in stack, recording of size is done by linker. <- we will learn about it, further.
@@ -18,6 +21,5 @@ altitude: 0.0000
 Note: A value in “.rdata” cannot be modified, if you try, it will segmentation fault.
 
 <img src="../_resources/Decode-5.png" alt="Decode-5.png" width="1318" height="639" class="jop-noMdConv">
-
 <img src="../_resources/Decode-6.png" alt="Decode-6.png" width="1318" height="639" class="jop-noMdConv">
 
