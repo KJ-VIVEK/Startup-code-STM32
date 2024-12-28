@@ -12,4 +12,4 @@ Reference: https://youtu.be/qWqlkCLmZoE
 
 OBJECTIVE: To understand how startup code and linker file work together to memory map code at respective places i,e., in FLASH and SRAM.
 
-THEORY: [Understanding C-Code-Working-materials](https://github.com/KJ-VIVEK/Startup-code-STM32/tree/main/Understanding%20C-Code-Working-materials)
+THEORY: [Understanding C-Code-Working-materials](https://github.com/KJ-VIVEK/Startup-code-STM32/tree/main/Understanding%20C-Code-Working-materials) - The material are from the time, I used to Blog :)
